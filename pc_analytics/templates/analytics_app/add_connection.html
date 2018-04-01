@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: grey;">
+<center><h1>PC Analytics</h1></center><hr />
+<form action="{% url 'create' %}" method="post">
+    {% csrf_token %}
+    <label for="ip_address">IP Address: </label>
+    <input id="ip_address" type="text" name="ip_address">
+    <br /><br />
+
+    <label for="port">Port Number: </label>
+    <input id="port" type="text" name="port">
+    <br /><br />
+
+    <label for="username">Username: </label>
+    <input id="username" type="text" name="username">
+    <br /><br />
+
+    <label for="password">Password: </label>
+    <input id="password" type="text" name="password">
+    <br /><br />
+
+    <input type="submit" value="Connect">
+</form>
+</body>
+</html>
